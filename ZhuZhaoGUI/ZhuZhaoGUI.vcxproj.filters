@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ZZViewWidget\CustomGraphicsView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZZViewWidget\CustomImageItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZZViewWidget\CustomImageView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZZThumWidget\HThumbnailList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZZThumWidget\LitImgItemWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZZThumWidget\VThumbnailList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZZConfigWidget\ZZConfigWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZZListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZZLogWidget\ZZLogMessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZZLogWidget\ZZLogWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZZConfigWidget\ZZOneParamWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZZConfigWidget\ZZProcessThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ZZViewWidget\CustomGraphicsView.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ZZViewWidget\CustomImageItem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ZZViewWidget\CustomImageView.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ZZThumWidget\HThumbnailList.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="ZZConfigWidget\ImageConvert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="ZZThumWidget\LitImgItemWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MainWindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ZZThumWidget\VThumbnailList.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ZZConfigWidget\ZZConfigWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="ZZListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="ZZLogWidget\ZZLogMessage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ZZLogWidget\ZZLogWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ZZConfigWidget\ZZOneParamWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="ZZConfigWidget\ZZProcessThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="language_ch.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="ZhuZhaoGuiRes.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="ZhuzhaoGuiRes.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="Resouce\icon\clear.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resouce\icon\helper.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resouce\translate\language_ch.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resouce\icon\loadimg.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resouce\icon\nullImg.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resouce\icon\reset.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resouce\icon\runonce.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resouce\icon\zhuzhao.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resouce\icon\zhuzhao.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\Visual Studio3\ZhuZhaoGUI\ZhuZhaoGUI\ZhuZhaoGUI_resource.rc" />
+  </ItemGroup>
+</Project>

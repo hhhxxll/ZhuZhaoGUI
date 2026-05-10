@@ -1,0 +1,67 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+debug/
+release/
+build/
+bin/
+x64/
+x86/
+Debug/
+Release/
+
+# Qt
+*.qtvscr
+*.qm
+moc_*.cpp
+moc_*.h
+ui_*.h
+qrc_*.cpp
+Makefile
+*.pro.user
+*.pro.user.*
+
+# Compiled files
+*.obj
+*.o
+*.exe
+*.dll
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.log
+*.lastbuildstate
+*.FileListAbsolute.txt
+
+# Claude Code
+.claude/
+
+# Qt Creator
+.qtcreator/
+
+# Screenshots
+*.png
+!PhotometricStereo/images/*.png
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+*.slnx
+
+# Keep only source
+!*.cpp
+!*.h
+!*.pro
+!*.qrc
+!*.ts
+!*.ico
+!*.txt
