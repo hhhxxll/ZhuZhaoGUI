@@ -3,6 +3,7 @@
 
 #include <QMap>
 #include <QVector>
+#include <QMutex>
 
 enum MESSAGE {
     ZHUZHAO_UPDATE_SRCIMAGE	= 0x00000001,//刷新输入图像列表
@@ -31,6 +32,7 @@ private:
     ~ListenerManger() {};
     static ListenerManger* m_listenerManger;
     QMap<int, QVector<ZZListener*>> m_messageToLister;
+    QMutex m_mapMutex;
 };
 
 #endif // ZZLISTENER_H

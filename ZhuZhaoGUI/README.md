@@ -176,8 +176,9 @@ bin/
 
 ### v1.1.0 (2026-05-12)
 
-- 修复 `ZZLogMessage` 单例双重检查锁定的线程安全问题
-- 修复 `ZZProcessThread` 跨线程数据竞争，添加 `QMutex` 保护
+- 修复 `outputMessage` 带锁发射信号的死锁风险，将信号发射移出锁作用域
+- 重构 `ZZLogMessage` 单例为 Meyers 单例（C++11 Magic Statics），移除冗余的 DCLP 锁
+- 为 `ListenerManger` 添加 `QMutex` 保护，采用拷贝后分发策略避免持锁回调死锁
 - 修复 `MainWindow` 线程复用竞态，添加 `isRunning()` 防护
 - 优化 `ZZProcessThread` 函数参数为 `const` 引用
 - 完善代码注释和项目文档

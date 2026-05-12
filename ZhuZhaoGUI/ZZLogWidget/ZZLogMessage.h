@@ -24,7 +24,6 @@ public:
 private:
     explicit ZZLogMessage(QObject *parent = nullptr);
     ~ZZLogMessage();
-    static ZZLogMessage* m_pLogInstance;
 
 signals:
     void sigDebugStrData(const QString &);

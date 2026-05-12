@@ -10,27 +10,27 @@ ListenerManger* ListenerManger::Instance()
 
 void ListenerManger::notify(int message)
 {
-    //在m_messageToLister字典里找message数字在哪里
-    mmap::Iterator iter = m_messageToLister.find(message);
-    //如果没有找到字典最后,说明这个数字存在
-    if (iter != m_messageToLister.end())
+    QVector<ZZListener*> listenersToNotify;
+
     {
-        QVector<ZZListener*>::iterator listener = iter.value().begin();
-        //循环listener名单,只要没有执行到最后
-        while (listener != iter.value().end())
+        QMutexLocker locker(&m_mapMutex);
+        mmap::Iterator iter = m_messageToLister.find(message);
+        if (iter != m_messageToLister.end())
         {
-            (*listener)->RespondMessage(message);
-            listener++;
+            listenersToNotify = iter.value();
         }
     }
-    else
-    {
 
+    // 锁释放后再执行回调，避免 RespondMessage 中触发 registerMessage 导致死锁
+    for (int i = 0; i < listenersToNotify.size(); ++i)
+    {
+        listenersToNotify[i]->RespondMessage(message);
     }
- }
+}
 
 void ListenerManger::registerMessage(int message, ZZListener* listener)
 {
+    QMutexLocker locker(&m_mapMutex);
     auto Register = [&](int singleMessage)->void {
         mmap::iterator iter = m_messageToLister.find(singleMessage);
         if (iter == m_messageToLister.end())
