@@ -6,13 +6,13 @@
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/opencv.hpp"
 
-/**
+/*
  * cv::Mat 与 QImage 之间的转换函数
  * OpenCV 使用 BGR 颜色顺序，Qt 使用 RGB 颜色顺序
  * 两个函数处理了这个差异，实现双向转换
  */
 
-/**
+/*
  * @brief 将 OpenCV 的 cv::Mat 转换为 Qt 的 QImage
  * @param mat      待转换的图像，支持 CV_8UC1(灰度)、CV_8UC3(彩色)、CV_8UC4(带透明度彩色)
  * @param clone    true=深拷贝(独立内存)，false=共享内存(修改会互相影响)
@@ -73,7 +73,7 @@ QImage cvMat2QImage(const cv::Mat& mat, bool clone = true, bool rb_swap = true)
     }
 }
 
-/**
+/*
  * @brief 将 Qt 的 QImage 转换为 OpenCV 的 cv::Mat
  * @param image    待转换的图像，支持灰度、RGB888、ARGB32 等格式
  * @param clone    true=深拷贝(独立内存)，false=共享内存(修改会互相影响)

@@ -7,9 +7,9 @@
 
 ZZProcessThread::ZZProcessThread() {}
 
-void ZZProcessThread::SetPhotometricStereoParams(QList<QImage>& srcImages,
-                                                 QList<float>& Slants,
-                                                 QList<float>& Tilts)
+void ZZProcessThread::SetPhotometricStereoParams(const QList<QImage>& srcImages,
+                                                 const QList<float>& Slants,
+                                                 const QList<float>& Tilts)
 {
     QMutexLocker locker(&m_mutex);
     m_srcImages = srcImages;

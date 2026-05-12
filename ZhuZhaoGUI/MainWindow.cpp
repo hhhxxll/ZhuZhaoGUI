@@ -136,6 +136,9 @@ void MainWindow::RespondMessage(int message)
     //运行算法
     if((message & MESSAGE::ZHUZHAO_RUNONCE) == MESSAGE::ZHUZHAO_RUNONCE)
     {
+        if(m_pRunProcess->isRunning())
+            return;
+
         QList<QImage> srcImages;
         QList<float> Slants;
         QList<float> Tilts;

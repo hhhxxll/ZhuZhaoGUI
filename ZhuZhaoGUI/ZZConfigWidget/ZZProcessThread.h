@@ -9,9 +9,9 @@ class ZZProcessThread : public QThread
 {
 public:
     ZZProcessThread();
-    void SetPhotometricStereoParams(QList<QImage>& srcImage,
-                                    QList<float>& Slants,
-                                    QList<float>& Tilts);
+    void SetPhotometricStereoParams(const QList<QImage>& srcImage,
+                                    const QList<float>& Slants,
+                                    const QList<float>& Tilts);
 
     void GetResultImage(QList<QImage>& dstImages);
 
