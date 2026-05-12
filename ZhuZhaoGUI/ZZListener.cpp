@@ -66,3 +66,12 @@ ZZListener::ZZListener()
 {
     // 留空即可
 }
+
+void ListenerManger::unregisterAll(ZZListener* listener)
+{
+    QMutexLocker locker(&m_mapMutex);
+    for (mmap::iterator iter = m_messageToLister.begin(); iter != m_messageToLister.end(); ++iter)
+    {
+        iter.value().removeAll(listener);
+    }
+}

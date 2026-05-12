@@ -27,6 +27,7 @@ public:
     static ListenerManger* Instance();
     void notify(int message);
     void registerMessage(int message, ZZListener* listener);
+    void unregisterAll(ZZListener* listener);
 private:
     ListenerManger() {};
     ~ListenerManger() {};

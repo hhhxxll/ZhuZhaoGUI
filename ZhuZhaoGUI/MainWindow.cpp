@@ -42,7 +42,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
-
+    ListenerManger::Instance()->unregisterAll(this);
 }
 
 //初始化组件

@@ -179,6 +179,7 @@ bin/
 - 修复 `outputMessage` 带锁发射信号的死锁风险，将信号发射移出锁作用域
 - 重构 `ZZLogMessage` 单例为 Meyers 单例（C++11 Magic Statics），移除冗余的 DCLP 锁
 - 为 `ListenerManger` 添加 `QMutex` 保护，采用拷贝后分发策略避免持锁回调死锁
+- 新增 `ListenerManger::unregisterAll` 注销机制，防止监听器销毁后收到回调导致崩溃
 - 修复 `MainWindow` 线程复用竞态，添加 `isRunning()` 防护
 - 优化 `ZZProcessThread` 函数参数为 `const` 引用
 - 完善代码注释和项目文档
